@@ -1,4 +1,4 @@
-bf9b0a8f706eaee50f78c4b45dbbb7e2 *DESCRIPTION
+ffe677c55cc66beb65c8f5e332f998e1 *DESCRIPTION
 79b2444b7deb219db41910c630262954 *NAMESPACE
 f81aa3364fe0ccf4c12f0a85ffe8c63f *R/cr.rand.max.inner.prod.R
 630c68337e3e717ad8b1eda1884a4baa *R/ews.trans.R
@@ -18,12 +18,12 @@ e4dfb522ed62f33175a4a45c2ce6095b *man/cr.rand.max.inner.prod.Rd
 d17fa8a318bedcabbab02e7efa87f18b *man/finner.prod.iter.Rd
 7bbe06446cd14ccbf0a7549a8d0879a4 *man/get.thres.Rd
 3986153d1f2a4d5fc7fb05b0336083fe *man/get.thres.ar.Rd
-7f7d68279397920ab54d9b27f638ebe8 *man/post.processing.Rd
+78e2ae142facfab47c31a122a9368429 *man/post.processing.Rd
 a6e4f946d8aed631cb0d0035d1956cdd *man/sim.pw.ar.Rd
 1af82f659f3818343073f6b6349cdf2d *man/sim.pw.ar2.Rd
 90a6e9f1f6bac1b7f77e27f1c842972d *man/sim.pw.arma.Rd
-a777289c326eca9215515eb377cde979 *man/tau.fun.Rd
-37361e8ce838cf03dfb01bc55d68de6f *man/uh.wbs.Rd
+8bf5c829094a8daee28fe591a0d3a723 *man/tau.fun.Rd
+3ea8d9cb22c1dffb9e19bd2e759d183d *man/uh.wbs.Rd
 9c67872a99eaebb4f599ba1f5ddc4797 *man/wbs.lsw.Rd
 4616634ad7dc65ea901eb56ab5ae0825 *man/wbsts-package.Rd
-65ceb2a82b1865180427d07c0aac6218 *src/innerProd.c
+a65a9c538d9f5be6c9c0d515f4e7a492 *src/innerProd.c

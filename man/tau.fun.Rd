@@ -31,7 +31,7 @@ P. Fryzlewicz (2014), Wild Binary Segmentation for multiple change-point detecti
 Statistics, 42, 2243-2281. (http://stats.lse.ac.uk/fryzlewicz/wbs/wbs.pdf)
 
 
-K. Korkas and P. Fryzlewicz (2015), Multiple change-point detection for non-stationary time series using Wild Binary Segmentation. (http://personal.lse.ac.uk/KORKAS/papers.html)
+K. Korkas and P. Fryzlewicz (2015), Multiple change-point detection for non-stationary time series using Wild Binary Segmentation. (http://stats.lse.ac.uk/fryzlewicz/WBS_LSW/WBS_LSW.pdf)
 }
 \author{
 K. Korkas and P. Fryzlewicz

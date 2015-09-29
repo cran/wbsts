@@ -24,7 +24,7 @@ The minimum allowed size of a segment.
 }
 
   \item{epp}{
-A minimum adjustment for the bias present in \eqn{E^{(i)}-{t,T}}.
+A minimum adjustment for the bias present in \eqn{E^{(i)}_{t,T}}.
 }
   \item{scale}{
 Which wavelet periodogram scales to be used.

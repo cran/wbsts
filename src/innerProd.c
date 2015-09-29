@@ -11,6 +11,7 @@ repeating for random intervals
 void finner_prod_maxp(double *out, int *n, int *max_b, double *p, double *max_inner){
 	int iter,s0,e0;
 	double aux,maxipi;
+	max_inner[0]=0;
 	max_b[0] = 0;
 	s0 = floor((1-(*p))* (*n)) ;
 	e0 = ceil((*p) * (*n));
@@ -29,6 +30,9 @@ void fast_inner_prod(double *x, int *n, double *out, double *I_plus, double *I_m
      double sum_of_x, i_a,I_plusinv,fct,npw2,n_inv;
      int iter;
      double n_a = (double)(*n);
+     i_a = (double)0;
+     I_plusinv=0;
+     fct=0;
      n_inv = 1 / n_a;
      npw2 = n_a * n_a;
      sum_of_x = 0;
@@ -56,6 +60,7 @@ void across_fip(double *x_a, int *n,  int *d, double *res_a,double *tau,int *epp
  double temp, crit;
  int TF;
  n_2 = *n;
+ ilow=0;
  scales_temp = *d;
 
  for (j=0; j < scales_temp; j++){
@@ -80,7 +85,7 @@ finner_prod_maxp(res_a, n, max_b, p, max_inner);
 
 void multi_across_fip(double *x_a, int *n,  int *d, double *tau,int *epp, double *Ts,int *min_draw, int *M, double *p,int *max_b,
                       double *max_inner,int *out1,double *out2,int *out3,int *out4) {
- int p1,p2,m,i,k,ilow,temp,len,j,len2, scales_temp;
+ int p1=0,p2=0,m,i,k=0,ilow=0,temp=0,len,j,len2=0, scales_temp;
  int Maux=*M, *len3=&len2, *p11=&p1;
  len = *n;
  scales_temp = *d;

@@ -23,7 +23,7 @@ The change-points to be post-processed.
 The minimum allowed size of a segment.
 }
   \item{epp}{
-A minimum adjustment for the bias present in \eqn{E^{(i)}-{t,T}}.
+A minimum adjustment for the bias present in \eqn{E^{(i)}_{t,T}}.
 }
   \item{C_i}{
 The CUSUM threshold.
@@ -40,18 +40,18 @@ K. Korkas and P. Fryzlewicz (2015), Multiple change-point detection for non-stat
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
-\examples{
-#### Generate a highly persistent time series with changing variance and of length 5,000
-###Location of the change-points
-cps=seq(from=1000,to=2800,by=200)
-y=sim.pw.arma(N =3000,sd_u = c(1,1.5,1,1.5,1,1.5,1,1.5,1,1.5,1),
-b.slope=rep(0.99,11),b.slope2 = rep(0.,11), mac = rep(0.,11),br.loc = cps)[[2]]
-###Estimate the change points via Wild Binary Segmentation
-beforeProcessing=wbs.lsw(y,M=0)$cp.bef
-###Post-processing of the change points
-post.processing(z=ews.trans(y,c(11,10,9,8)),br=beforeProcessing,C_i=tau.fun(y),scales=c(11,10,9,8))
+%\examples{
+%#### Generate a highly persistent time series with changing variance and of length 5,000
+%###Location of the change-points
+%cps=seq(from=1000,to=2800,by=200)
+%y=sim.pw.arma(N =3000,sd_u = c(1,1.5,1,1.5,1,1.5,1,1.5,1,1.5,1),
+%b.slope=rep(0.99,11),b.slope2 = rep(0.,11), mac = rep(0.,11),br.loc = cps)[[2]]
+%###Estimate the change points via Wild Binary Segmentation
+%beforeProcessing=wbs.lsw(y,M=0)$cp.bef
+%###Post-processing of the change points
+%post.processing(z=ews.trans(y,c(11,10,9,8)),br=beforeProcessing,C_i=tau.fun(y),scales=c(11,10,9,8))
 
-}
+%}
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
 \keyword{change-point detection }
