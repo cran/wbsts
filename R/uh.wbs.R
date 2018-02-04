@@ -25,11 +25,11 @@ function(z,C_i, del=-1, epp, scale,M=0,cstar=0.75){
   tree[[1]][1,1]<-1
   s<-tree[[1]][4,1]<-1
   e<-tree[[1]][6,1]<-nz
-  b=-1
-  while(b < 0 | b > e) { 
+ # b=-1
+ # while(b < 0 | b > e) { 
     temp.r = cr.rand.max.inner.prod(XX=z[s:e,],Ts=n,C_i=C_i,epp=epp,M=M,cstar=cstar,Plot=0)
     b <- temp.r[[1]]
-  }
+  #}
   tree[[1]][5,1] <- b
   d<-temp.r[[2]]
   if(abs(d)>criterion){
@@ -46,11 +46,11 @@ function(z,C_i, del=-1, epp, scale,M=0,cstar=0.75){
           if(tree[[j]][5, i]-tree[[j]][4, i]>max(ep, del)+1){
             s<-tree[[j]][4, i]
             e<-tree[[j]][5, i]
-            ind.max=-1
-            while(ind.max < 0 | ind.max > e) { 
+            #ind.max=-1
+            #while(ind.max < 0 | ind.max > e) { 
               temp.RIP = cr.rand.max.inner.prod(XX=z[s:e,],Ts=n,C_i=C_i,epp=epp,M=M,cstar=cstar)
               ind.max = temp.RIP[[1]]
-            }
+            #}
             b<-s+ind.max-1
             d<-temp.RIP[[2]]
             
@@ -70,12 +70,11 @@ function(z,C_i, del=-1, epp, scale,M=0,cstar=0.75){
           if(tree[[j]][6, i]-tree[[j]][5, i]>max(ep, del)+1){
             s<-tree[[j]][5, i]+1
             e<-tree[[j]][6, i]
-            ind.max=-1
-            while(ind.max < 0 | ind.max > e) { 
+            #ind.max=-1
+            #while(ind.max < 0 | ind.max > e) { 
               temp.RIP = cr.rand.max.inner.prod(XX=z[s:e,],Ts=n,C_i=C_i,epp=epp,M=M,cstar=cstar)
               ind.max = temp.RIP[[1]]
-              
-            }  
+            #}  
             b<-s+ind.max-1
             d<-temp.RIP[[2]] 
             

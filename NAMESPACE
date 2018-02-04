@@ -3,7 +3,7 @@ import(mvtnorm,wmtsa)
 importFrom("graphics", "plot")
 importFrom("stats", "aggregate", "ar", "arima.sim", "quantile", "rnorm")
 importFrom("utils", "tail")
-useDynLib(wbsts)
+useDynLib(wbsts, .registration = TRUE)
 
 
 #S3method(methodName,className)

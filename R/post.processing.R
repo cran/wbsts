@@ -8,7 +8,7 @@ function(z,br,del=-1,epp=-1,C_i=NULL,scales=NULL){
   if(del<0){     del<-floor(n)^(2/3)
   }
   br=sort(br, decreasing=F)
-  if((br[1]-1) < del) br=br[-1]
+  if((br[1]) < del) br=br[-1]
   if (is.null(br)) {
     return(NA)
     stop
