@@ -43,7 +43,7 @@ This parameter defines the maximum number of the wavelet periodogam scales. This
 %% ...
 }
 \references{
-K. Korkas and P. Fryzlewicz (2015), Multiple change-point detection for non-stationary time series using Wild Binary Segmentation. (http://stats.lse.ac.uk/fryzlewicz/WBS_LSW/WBS_LSW.pdf)
+K. Korkas and P. Fryzlewicz (2017), Multiple change-point detection for non-stationary time series using Wild Binary Segmentation. Statistica Sinica, 27, 287-311. (http://stats.lse.ac.uk/fryzlewicz/WBS_LSW/WBS_LSW.pdf)
 }
 \author{
 K. Korkas and P. Fryzlewicz

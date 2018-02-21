@@ -30,8 +30,7 @@ Thresholds for every wavelet scale
 P. Fryzlewicz (2014), Wild Binary Segmentation for multiple change-point detection. Annals of
 Statistics, 42, 2243-2281. (http://stats.lse.ac.uk/fryzlewicz/wbs/wbs.pdf)
 
-
-K. Korkas and P. Fryzlewicz (2015), Multiple change-point detection for non-stationary time series using Wild Binary Segmentation. (http://stats.lse.ac.uk/fryzlewicz/WBS_LSW/WBS_LSW.pdf)
+K. Korkas and P. Fryzlewicz (2017), Multiple change-point detection for non-stationary time series using Wild Binary Segmentation. Statistica Sinica, 27, 287-311. (http://stats.lse.ac.uk/fryzlewicz/WBS_LSW/WBS_LSW.pdf)
 }
 \author{
 K. Korkas and P. Fryzlewicz
@@ -45,15 +44,15 @@ K. Korkas and P. Fryzlewicz
 %}
 
 \examples{ 
-
-cps=c(400,470)
-set.seed(101)
-y=sim.pw.ar(N =2000,sd_u = 1,b.slope=c(0.4,-0.6,0.5),br.loc=cps)[[2]]
+##not run##
+#cps=c(400,470)
+#set.seed(101)
+#y=sim.pw.ar(N =2000,sd_u = 1,b.slope=c(0.4,-0.6,0.5),br.loc=cps)[[2]]
 #tau.fun(y) is the default value for C_i
-#Binary segmentation
-wbs.lsw(y,M=1)$cp.aft
-#Wild binary segmentation
-wbs.lsw(y,M=3500)$cp.aft
+##Binary segmentation
+#wbs.lsw(y,M=1)$cp.aft
+##Wild binary segmentation
+#wbs.lsw(y,M=3500)$cp.aft
 
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the

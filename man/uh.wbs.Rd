@@ -48,7 +48,7 @@ This refers to the unbalanceness parameter \eqn{c_{\star}}.
 %% ...
 }
 \references{
-K. Korkas and P. Fryzlewicz (2015), Multiple change-point detection for non-stationary time series using Wild Binary Segmentation. (http://stats.lse.ac.uk/fryzlewicz/WBS_LSW/WBS_LSW.pdf)
+K. Korkas and P. Fryzlewicz (2017), Multiple change-point detection for non-stationary time series using Wild Binary Segmentation. Statistica Sinica, 27, 287-311. (http://stats.lse.ac.uk/fryzlewicz/WBS_LSW/WBS_LSW.pdf)
 }
 
 
@@ -57,13 +57,13 @@ K. Korkas and P. Fryzlewicz (2015), Multiple change-point detection for non-stat
 \examples{
 #### Generate a highly persistent time series with changing variance and of length 5,000
 ###Location of the change-points
-cps=seq(from=1000,to=2800,by=200)
-y=sim.pw.arma(N =3000,sd_u = c(1,1.5,1,1.5,1,1.5,1,1.5,1,1.5,1),
-b.slope=rep(0.99,11),b.slope2 = rep(0.,11), mac = rep(0.,11),br.loc = cps)[[2]]
+#cps=seq(from=1000,to=2800,by=200)
+#y=sim.pw.arma(N =3000,sd_u = c(1,1.5,1,1.5,1,1.5,1,1.5,1,1.5,1),
+#b.slope=rep(0.99,11),b.slope2 = rep(0.,11), mac = rep(0.,11),br.loc = cps)[[2]]
 ###Estimate the change points via Binary Segmentation
-wbs.lsw(y,M=1)$cp.aft
+#wbs.lsw(y,M=1)$cp.aft
 ###Estimate the change points via Wild Binary Segmentation
-wbs.lsw(y,M=0)$cp.aft
+#wbs.lsw(y,M=0)$cp.aft
 
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the

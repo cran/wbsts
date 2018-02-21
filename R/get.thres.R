@@ -12,7 +12,7 @@ function(n, q=.95, r=100, scales=NULL){
       z<-ews[,l]
       dis<-c(round((n-n/2^(scales[l])+1)):n)
       z<-z[-dis]; nz<-length(z)
-      m<-c(m, max(abs(finner.prod.iter(z)))/1/log(n))
+      m<-c(m, max(abs(cusum(z)))/1/log(n))
     }
     M<-rbind(M, m)
   }
@@ -29,7 +29,7 @@ function(n, q=.95, r=100, scales=NULL){
       z<-ews[,l]
       dis<-c(round((n-n/2^(scales[l])+1)):n)
       z<-z[-dis]; nz<-length(z)
-      m<-c(m, max(abs(finner.prod.iter(z)))/1/log(n))
+      m<-c(m, max(abs(cusum(z)))/1/log(n))
     }
     M<-rbind(M, m)
   }
@@ -45,7 +45,7 @@ function(n, q=.95, r=100, scales=NULL){
       z<-ews[,l]
       dis<-c(round((n-n/2^(scales[l])+1)):n)
       z<-z[-dis]; nz<-length(z)
-      m<-c(m, max(abs(finner.prod.iter(z)))/1/log(n))
+      m<-c(m, max(abs(cusum(z)))/1/log(n))
     }
     M<-rbind(M, m)
   }
@@ -62,7 +62,7 @@ function(n, q=.95, r=100, scales=NULL){
       z<-ews[,l]
       dis<-c(round((n-n/2^(scales[l])+1)):n) 
       z<-z[-dis]; nz<-length(z)
-      m<-c(m, max(abs(finner.prod.iter(z)))/1/log(n))
+      m<-c(m, max(abs(cusum(z)))/1/log(n))
     }
     M<-rbind(M, m)
   }

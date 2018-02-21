@@ -28,19 +28,19 @@ The wavelet periodogram scales to be used. If NULL (DEFAULT) then this is select
 }
 
 \references{
-K. Korkas and P. Fryzlewicz (2015), Multiple change-point detection for non-stationary time series using Wild Binary Segmentation. (http://stats.lse.ac.uk/fryzlewicz/WBS_LSW/WBS_LSW.pdf)
+K. Korkas and P. Fryzlewicz (2017), Multiple change-point detection for non-stationary time series using Wild Binary Segmentation. Statistica Sinica, 27, 287-311. (http://stats.lse.ac.uk/fryzlewicz/WBS_LSW/WBS_LSW.pdf)
 
-K. Korkas and P. Fryzlewicz (2015), Supplementary material: Multiple change-point detection for non-stationary time series using Wild Binary Segmentation.
+K. Korkas and P. Fryzlewicz (2017), Supplementary material: Multiple change-point detection for non-stationary time series using Wild Binary Segmentation.
 }
 \author{
 K. Korkas and P. Fryzlewicz
 }
 \examples{
-cps=seq(from=100,to=1200,by=350)
-y=sim.pw.arma(N =1200,sd_u = c(1,1.5,1,1.5,1),
-b.slope=rep(0.99,5),b.slope2 = rep(0.,5), mac = rep(0.,5),br.loc = cps)[[2]]
-C_i=get.thres.ar(y=y, q=.95, r=100, scales=NULL)
-wbs.lsw(y,M=1, C_i = C_i)$cp.aft
+#cps=seq(from=100,to=1200,by=350)
+#y=sim.pw.arma(N =1200,sd_u = c(1,1.5,1,1.5,1),
+#b.slope=rep(0.99,5),b.slope2 = rep(0.,5), mac = rep(0.,5),br.loc = cps)[[2]]
+#C_i=get.thres.ar(y=y, q=.95, r=100, scales=NULL)
+#wbs.lsw(y,M=1, C_i = C_i)$cp.aft
 
 
 }

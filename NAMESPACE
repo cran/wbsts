@@ -1,9 +1,7 @@
+useDynLib(wbsts, .registration=TRUE)
 exportPattern("^[[:alpha:]]+")
+importFrom(Rcpp, evalCpp)
 import(mvtnorm,wmtsa)
 importFrom("graphics", "plot")
-importFrom("stats", "aggregate", "ar", "arima.sim", "quantile", "rnorm")
+importFrom("stats","aggregate", "ar", "arima.sim", "quantile", "rnorm")
 importFrom("utils", "tail")
-useDynLib(wbsts, .registration = TRUE)
-
-
-#S3method(methodName,className)

@@ -32,8 +32,9 @@ function(z,C_i, del=-1, epp, scale,M=0,cstar=0.75){
   #}
   tree[[1]][5,1] <- b
   d<-temp.r[[2]]
+  if(!is.numeric(d)) stop("WBS function returns NaN. Check again")
+  
   if(abs(d)>criterion){
-    
     tree[[1]][2,1]<-d
     breakpoints <- c(breakpoints, b)
     f<-c(f, d)  
@@ -53,7 +54,8 @@ function(z,C_i, del=-1, epp, scale,M=0,cstar=0.75){
             #}
             b<-s+ind.max-1
             d<-temp.RIP[[2]]
-            
+            d=ifelse(is.numeric(d),d,0)
+            d=ifelse(abs(d)>10^(-3),d,0)
             if(abs(d)>criterion){
               if(length(tree)==j) tree<-c(tree, list(matrix(0, 6, 0)))
               no.child.coeffs<-no.child.coeffs+1
@@ -77,7 +79,8 @@ function(z,C_i, del=-1, epp, scale,M=0,cstar=0.75){
             #}  
             b<-s+ind.max-1
             d<-temp.RIP[[2]] 
-            
+            d=ifelse(is.numeric(d),d,0)
+            d=ifelse(abs(d)>10^(-3),d,0)
             if(abs(d)>criterion){
               if(length(tree)==j) tree<-c(tree, list(matrix(0, 6, 0)))
               no.child.coeffs<-no.child.coeffs+1

@@ -5,7 +5,7 @@
 Universal thresholds calculation
 }
 \description{
-The function returns universal thresholds and the method is described in Korkas and Fryzlewicz (2015) and Cho and Fryzlewicz (2012). See also the supplementary material for the former work. The function works for any sample size.
+The function returns universal thresholds and the method is described in Korkas and Fryzlewicz (2017) and Cho and Fryzlewicz (2012). See also the supplementary material for the former work. The function works for any sample size.
 }
 \usage{
 get.thres(n, q=.95, r=100, scales=NULL)
@@ -28,9 +28,9 @@ The wavelet periodogram scales to be used. If NULL (DEFAULT) then this is select
 
 }
 \references{
-K. Korkas and P. Fryzlewicz (2015), Multiple change-point detection for non-stationary time series using Wild Binary Segmentation. (http://stats.lse.ac.uk/fryzlewicz/WBS_LSW/WBS_LSW.pdf)
+K. Korkas and P. Fryzlewicz (2017), Multiple change-point detection for non-stationary time series using Wild Binary Segmentation. Statistica Sinica, 27, 287-311. (http://stats.lse.ac.uk/fryzlewicz/WBS_LSW/WBS_LSW.pdf)
 
-K. Korkas and P. Fryzlewicz (2015), Supplementary material: Multiple change-point detection for non-stationary time series using Wild Binary Segmentation.
+K. Korkas and P. Fryzlewicz (2017), Supplementary material: Multiple change-point detection for non-stationary time series using Wild Binary Segmentation.
 
 Cho, H. and Fryzlewicz, P. (2012). Multiscale and multilevel technique for consistent segmentation of nonstationary time series. Statistica Sinica, 22(1), 207-229.
 }
