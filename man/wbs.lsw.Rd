@@ -64,7 +64,4 @@ K. Korkas and P. Fryzlewicz
 #wbs.lsw(y,M=0)$cp.aft
 
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{change-points, detection, segmentation, randomised }
-%\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line
+

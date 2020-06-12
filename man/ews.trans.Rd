@@ -5,7 +5,7 @@
 Computation of the Evolutionary Wavelet Spectrum (EWS)
 }
 \description{
-The function computes the EWS from a time series of any (non-dyadic) size by utilising the 
+The function computes the EWS from a time series of any (non-dyadic) size by utilising the
 maximal overlap discrete wavelet transform; see also W. Constantine and D. Percival (2015).
 }
 \usage{
@@ -28,7 +28,7 @@ The evolutionary wavelet spectral estimate of y.
 %% ...
 }
 \references{
-W. Constantine and D. Percival (2015), wmtsa: Wavelet Methods for Time Series Analysis. R Package Version 2.0-0. 
+	Eric Aldrich (2020), wavelets: Functions for Computing Wavelet Filters, Wavelet Transforms and Multiresolution Analyses.
 }
 \examples{
 ews=ews.trans(rnorm(1000),c(9,8,7))
